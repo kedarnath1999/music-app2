@@ -28,7 +28,7 @@ app.use("/api/songs/", songRoute);
 //   console.log("Mongodb Connected");
 // });
 
-mongoose.connect("mongodb+srv://admin:admin@cluster0.vz3ejbb.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true });
+// mongoose.connect("mongodb+srv://admin:admin@cluster0.vz3ejbb.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true });
 mongoose.connection
   .once("open", () => console.log("Connected"))
   .on("error", (error) => {
